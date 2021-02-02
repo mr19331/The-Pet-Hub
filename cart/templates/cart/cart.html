@@ -141,14 +141,14 @@
 
 <script type="text/javascript">
     //update quantity on click 
-    $('.update-link').click(function(e){
+    $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
         form.submit();
     })
 
     //Remove an item from the cart and reload on click
     $('.remove-item').click(function(e) {
-        var csrfToken = "{{csrf_token}}";
+        var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('product_size');
         var url = `/cart/remove/${itemId}/`;
@@ -156,11 +156,12 @@
 
         $.post(url, data)
          .done(function() {
+             location.reload();
 
          });
     })
 </script>
-{% endblock %}
+{% endblock %}  
 
 
                                         
