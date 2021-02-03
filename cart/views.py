@@ -99,6 +99,6 @@ def remove_from_cart(request, item_id):
         request.session['cart'] = cart
         return HttpResponse(status=200)
 
-    except Exception as e: 
+    except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
