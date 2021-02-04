@@ -15,7 +15,7 @@ def view_cart(request):
 def add_to_cart(request, item_id):
     """ Add quantity of product to the shopping cart"""
 
-    product = Product.objects.get(pk=item_id)
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     size = None
@@ -30,10 +30,10 @@ def add_to_cart(request, item_id):
                 messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {cart[item-id]["items_by_size"][size]}')
             else:
                 cart[item_id]['items_by_size'][size] = quantity
-                messages.success(request, f'Added size{size.upper()} {product.name} to your cart')
+                messages.success(request, f'Added size {size.upper()} {product.name} to your cart')
         else:
             cart[item_id] = {'items_by_size': {size: quantity}}
-            messages.success(request, f'Added size{size.upper()} {product.name} to your cart')
+            messages.success(request, f'Added size {size.upper()} {product.name} to your cart')
     else:
         if item_id in list(cart.keys()):
             cart[item_id] += quantity
@@ -42,7 +42,6 @@ def add_to_cart(request, item_id):
             messages.success(request, f'You have added { product.name} to {cart[item_id]}')
 
     request.session['cart'] = cart
-
     return redirect(redirect_url)
 
 
