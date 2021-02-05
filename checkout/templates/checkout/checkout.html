@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% load bag_tools %}
+{% load cart_tools %}
 
 
 {% block extra_css %}
@@ -86,7 +86,7 @@
               {{ order_form.phone_number | as_crispy_field }}
               {{ order_form.country | as_crispy_field }}
               {{ order_form.postcode | as_crispy_field }}
-              {{ order_form.town_or_country | as_crispy_field }}
+              {{ order_form.town_or_city | as_crispy_field }}
               {{ order_form.street_address1 | as_crispy_field }}
               {{ order_form.street_address2 | as_crispy_field }}
               {{ order_form.county | as_crispy_field }}
