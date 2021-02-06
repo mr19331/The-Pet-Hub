@@ -26,9 +26,12 @@ def checkout(request):
         currency=settings.STRIPE_CURRENCY,
     )
 
-    print(intent)
-
     order_form = OrderForm()
+
+    if not stripe_public_key:
+        messages.warning(request, 'The public key for Stripe is missing \
+            reset in your environment! ')
+
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
