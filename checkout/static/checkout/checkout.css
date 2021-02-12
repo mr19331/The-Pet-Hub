@@ -28,7 +28,7 @@
 
 
 .fieldset-label {
-    position: relative;
+    position: relative; 
     right: .5rem;
 }
 
@@ -40,11 +40,11 @@
 
 select,
 select option {
-    color: #000;
+    color: #000000;
 }
 
 select:invalid,
-select option[value='']{
+select option[value=""] {
     color:#aab7c4 !important;
 }
 
