@@ -4,9 +4,9 @@
 Css from https://stripe.com/docs/stripe_js   */
 
 
-var stripe_public_key = $('#id_stripe_public_key').text().slice(1, -1);
+var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 var clientSecret = $('#id_client_secret').text().slice(1, -1);
-var stripe = Stripe(stripe_public_key);
+var stripe = Stripe(stripePublicKey);
 var elements = stripe.elements();
 
 
@@ -98,7 +98,7 @@ form.addEventListener('submit', function(ev) {
                var errorDiv = document.getElementById('card-errors');
                var html = `
                    <span class="icon" role="alert">
-                   <i class="fas fa-times></i>
+                   <i class="fas fa-times"></i>
                    </span>
                    <span>${result.error.message}</span>`;
                 $(errorDiv).html(html);
@@ -108,7 +108,7 @@ form.addEventListener('submit', function(ev) {
                 $('#submit-button').attr('disabled', false);
             } else {
                 if (result.paymentIntent.status === 'succeeded') {
-                    form.submit();
+                     form.submit();
                 }
             }
        });
