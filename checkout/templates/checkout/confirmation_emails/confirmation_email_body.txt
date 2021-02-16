@@ -1,0 +1,19 @@
+Hello {{ order.full_name}}
+This email is to confirm your order made at The Pet Hub, the details of your order are:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: {{ order.order_total }}
+Delivery: £{{ order.delivery_cost }}
+Grand Total: £{{ order.grand_total }}
+
+Your order will be shipped to {{ order.street_address1}} in {{ order.town_or_city }}, {{ order.country }}
+
+The phone number we have for this order is {{ order.phone_number }}
+
+Please contact us with any concerns about your order at {{ contact.email }} we want you to have a wonderful shopping experience with us!
+
+Thanks for ordering at The Pet Hub,
+
+Best Wishes from The Pet Hub Team
