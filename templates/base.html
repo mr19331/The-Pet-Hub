@@ -139,6 +139,67 @@
     {% block content %}
     {% endblock %} 
 
+         <!--Footer Section  -->
+     <footer>
+      <div class="container mt-5">
+        <div class="row">
+        
+                 <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                     <ul class="address text-white list-unstyled">
+                         <h5><span><strong>FIND US!</strong></span></h5>     
+                          <li>
+                             <p>info@thepethub.co.uk</p>
+                           </li>
+                                
+                           <li>
+                             <p>+44 1234 56789</p>
+                           </li>
+                     </ul>
+                 </div>
+                 
+                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                     <ul class="contact text-white list-unstyled">
+                          <h5><span><strong>JOIN US!</strong></span></h5>   
+                          <li>
+                             <a class="text-white" href="{% url 'account_signup' %}" class="btn-small white red-text center-align"><strong>Sign 
+                        Up Now</strong></a>
+                           </li>
+                                
+                           <li>
+                              <a class="text-white" href="">Home</a>
+                           </li>
+                                
+                           <li>
+                             <a class="text-white" href="{% url 'blog' %}"> Read Our Blog</a>
+                           </li>
+                     </ul>
+                 </div>
+            
+                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                  <ul class="social text-white list-unstyled">
+                               <h5><span><strong>FOLLOW US!</strong></span></h5>   
+                                <li>
+                                     <a class="text-white" href=https://facebook.com" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                                </li>
+                               
+                                <li>
+                                     <a class="text-white" href="https://twitter.com" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                                </li>
+                                 
+                                <li>
+                                     <a class="text-white" href="https://youtube.com"><i class="fa fa-youtube fa-2x"></i></a>
+                                </li>         
+                      </ul>
+                 </div>
+            
+            
+            </div> 
+         </div>
+     </footer>
+
+    {% block footer %}
+    {%  endblock %}
+
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
