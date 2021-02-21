@@ -1,33 +1,10 @@
 {% extends "base.html" %}
 
-{% block page_header %}
-<div class="container header-container">
-    <div class="row">
-         <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
-
+{% block page_header %} {% include 'blog/page_header.html' %} {% endblock %}
 
 {% block content %}
 
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">The Pet Hub Blog</h2>
-                <hr>
-            </div>
-        </div>
-    </div> 
-     <div class="row">
-         <div class="col-12 col-lg-6">
-           
-           </div>
-        </div>
-           
- <div class="container">
+<div class="container">
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-md-8 mt-3 left">
@@ -35,14 +12,27 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h2 class="card-title">{{ post.title }}</h2>
-                    <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                    <p class="card-text">{{post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+                    <p class="card-text text-muted h6">{{ post.author }} | {{post.created_on }}</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="{{ post.image.url }}" style="max-width: 100%" />
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">{{ post.content|slice:":200" }}...</p>
+                            <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary">Read More &rarr;</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             {% endfor %}
         </div>
-        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+        {% block sidebar %} {% include 'blog/sidebar.html' %} {% endblock sidebar %}
     </div>
 </div>
-{%endblock%}
+{% endblock %}
+
+
+
+
+  
+    
