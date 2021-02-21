@@ -96,6 +96,23 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+/* Home page gallery  */
+
+.gallery-head {
+  background: #343c44;
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.gallery-head h3 {
+  padding: 1rem;
+}
+
 
 /* Toast notifications  */
 
