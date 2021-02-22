@@ -16,13 +16,50 @@ The regular addition of blog articles creates fresh content for the site, as do 
 Shoppers may buy items from the website without creating an account but visitors are encouraged to register and create an account so they can store their shipping and purchasing information and so that the website can market to them through email. 
 
 **Rationale for the Project** 
- The pet sector is flourishing and pet owners like to buy the latest pet gadgets and gear and are interested in pet items that are useful and fun. Django and Stripe technologies can create a very effective website that can be commercially viable and not difficult or time consuming to operate. I want  to develop this project and make it a reality.  
+ The pet sector is flourishing and pet owners like to buy the latest pet gadgets and gear and are interested in pet items that are useful and fun. Django and Stripe technologies can create a very effective website that can be commercially viable and not difficult or time consuming to operate. I want  to develop this project and make it a reality.
+
+- [The Pet Hub](#the-pet-hub)
+  * [UX](#ux)
+    + [Strategy & Scope](#strategy---scope)
+        * [Visitor Goals](#visitor-goals)
+        * [**The Pet Hub Club meets these needs with:**](#--the-pet-hub-club-meets-these-needs-with---)
+        * [User Goals](#user-goals)
+        * [**The Pet Hub Club meets these needs :**](#--the-pet-hub-club-meets-these-needs----)
+        * [Business Goals](#business-goals)
+        * [**The Pet Hub Club meets these needs by:**](#--the-pet-hub-club-meets-these-needs-by---)
+    + [**Structure**](#--structure--)
+      - [**Skeleton**](#--skeleton--)
+      - [**Surface**](#--surface--)
+  * [**User Stories**](#--user-stories--)
+    + [**As a   shopper/blog reader **](#--as-a---shopper-blog-reader---)
+    + [**As a registered shopper/blog reader:**](#--as-a-registered-shopper-blog-reader---)
+    + [**As the website owner/admin (superuser):**](#--as-the-website-owner-admin--superuser----)
+  * [Defensive Design](#defensive-design)
+  * [Features of the website](#features-of-the-website)
+    + [Existing Features](#existing-features)
+        * [All Pages](#all-pages)
+        * [**Home Page**](#--home-page--)
+    + [Features Left to Implement](#features-left-to-implement)
+  * [Technologies Used](#technologies-used)
+  * [Deployment](#deployment)
+      - [Steps to Heroku Deployment :](#steps-to-heroku-deployment--)
+  * [Steps to Run App Locally](#steps-to-run-app-locally)
+  * [Credits](#credits)
+    + [Content](#content)
+    + [Media](#media)
+      - [**Code**](#--code--)
 
 
 
-## Goals of the Website 
 
-### 1.Visitor Goals 
+
+  
+
+## UX
+
+### Strategy & Scope
+
+##### Visitor Goals 
 
 - Pet owners who want to buy useful items for their pets, for training or amusement, or general pet care 
 
@@ -34,15 +71,24 @@ Shoppers may buy items from the website without creating an account but visitors
 
 -  Pet owners who want to ask questions and comment on the articles they read on the Pet Hub Blog 
 
-  **The Pet Hub Club meets these needs with:**
-  Pet items for sale that are good quality  and popular
-  A blog that is regularly updated with articles on pet care and featuring items for sale 
+  ##### **The Pet Hub Club meets these needs with:**
+  
+  A home page that is easy to navigate and clearly conveys the offerings of the site. 
+  
+  Purchases and reading the blog do not require user registration
+
+  Pet items for sale that are good quality and popular
+  Publishing frequent blog articles  relevant content and optimized for SEO to generate traffic and cut advertising costs
   Advertising space for local pet services
   Allowing  users to add comments or questions on the blog posts  
-
+  
+  The display banner offers free shipping as an enticement to buy 
+   The menu links are clearly indicated and blog posts are shown on the home page. 
+   Menu links have dropdowns for easy user access and icons when the site is on the mobile and tablet versions. 
+  
   
 
-###  **2.User Goals** 
+#####  User Goals 
 
 -  Repeat purchasers who want to store their purchasing  and shipping information, so they can buy  quickly giving just their name and email and CC number 
 
@@ -54,16 +100,19 @@ Shoppers may buy items from the website without creating an account but visitors
 
 - Those who want to find and buy pet items that have been reviewed or compared or endorsed in some way 
 
-   **The Pet Hub Club meets these needs :**
-  Users have the option to save purchasing and shipping information
+   ##### **The Pet Hub Club meets these needs :**
+  
+  Registered users have the option to save purchasing and shipping information
+  Payment for pet items purchased is secure and easy with the Stripe integration system. 
+  
   Users can comment on the blog articles or ask questions 
-  The site uses Stripe payments which are secure and automatic
+The site uses Stripe payments which are secure and automatic
   A confirmation email is generate automatically to shoppers with details of their purchase.
   Providing relevant articles that review, compare or endorse products on the site
-
+  
    
 
-### 3.Business Goals
+##### Business Goals
 
 - Maximise revenue from purchases by pet owners 
 
@@ -83,24 +132,55 @@ Shoppers may buy items from the website without creating an account but visitors
 
 -  Have an online shop that takes automatic payments 
 
-   **The Pet Hub Club meets these needs by:**
+   ##### **The Pet Hub Club meets these needs by:**
   
-  Creating blog articles using targeted keywords and search engine optimized content to get indexed by search engines 
-  Creating relevant blog articles with a link back to the site to get ranked in search engines and create traffic from posts on social media sites
-  Encouraging visitors to register so that they can receive email marketing from the site
   Stocking good quality useful items that are popular to avoid poor product reviews and negative feedback
   Designing a website that is attractive and easily navigated and understood with constantly updated content for shop and blog
-Using Stripe payment system with inbuilt and effective security and automation
+  Using Stripe payment system with inbuilt and effective security and automation
   
   
 
-## UX
+ 
+
+### **Structure**
+
+**Information Architecture**
+
+The dropdown link and button options are the conventional and well understood means for a user to find what they need onsite.
+
+ Pet products can sorted or searched for quickly and simply by category, rating or price. The search bar searches for items by keyword in the item description or in the item title. 
+
+Information architecture is designed to keep to a minimum the user steps to purchasing a pet item
+ To make a purchase users are not required to register or login, a user can select an item, add it to their cart and receive confirmation of purchase and checkout in a matter of minutes. 
+
+The information architecture is that which will enable all user goals to be fulfilled as quickly and as simply as possible. 
+
+Images are stored in 
+
+#### **Skeleton** 
+
+The home page is designed to encourage the visitor to buy pet items and to read the blog posts.  
+
+ 
+
+#### **Surface** 
+
+Appearance, images, colour choices and fonts were all chosen for a clean, minimal appearance 
+
+Basic bootstrap buttons, colours and messages  were used in design.  primary versus secondary actions/notification was adhered to. 
+
+Modern design conventions were followed.
+
+Crispy forms were used to create simple forms with as few input fields as possible, the emphasis was on keeping user effort to a minimum. 
+
+Fonts are those easy to read. 
 
 
- Shoppers may buy items from the website without creating an account but visitors are encouraged to sign up and create an account.
+ .
 
 1. **Wireframes**
-2. **Project Flow Diagram**
+
+   
 
 
 
@@ -142,7 +222,7 @@ Using Stripe payment system with inbuilt and effective security and automation
 
 ### **As the website owner/admin (superuser):**
 
--   I want to generate traffic to the site and persuade visitors to buy products so that I can earn        revenue 
+-   I want to generate traffic to the site and persuade visitors to buy products so that I can earn  revenue 
 -  I want to  sell advertising space to local pet services
 -  I want to be able to create blog articles that review the products for sale and publish posts that have valuable and relevant content for site visitors. 
 - I want  the website to  provide valuable information for users so that they return frequently
@@ -156,7 +236,76 @@ Using Stripe payment system with inbuilt and effective security and automation
 
 
 
-*
+## Defensive Design 
+
+**User information**
+
+User  messages at the top right of the users page inform the user when actions are successful and when an error is present.
+Eg when an item is added to the cart or when a user registers or logs in.  
+Form validation is present on each input field for every form.
+User is informed when data is not appropriate or in error 
+Eg  when registering   if the password is too similar to the username entered or when too few characters ( less than 8 ) are used in a pw 
+
+**Authentication**
+
+A user must validate their email before they can successfully register 
+Registered users are not shown the register link in the My account dropdown link 
+
+Users can only access the links to registered user areas if they are logged in.
+
+Super users only  are able to access the full Django admin site.
+
+Super users only can see the link to Product management in the My account link  and can  access the  add-Product, Edit Product and Delete-Product forms and actions
+Super users only can see the link to Post management in My account link and can access the Add Post form.
+
+Decorators have been added to enforce authorization measures as a result Django checks first whether a user/superuser is logged in before executing a view and will redirect  the user to the home page if not authorized after displaying an appropriate message. 
+
+**Products**
+
+The  'add to cart' button is disabled  for a quantity of 0.
+
+If an product does not have an accompanying image a no-image.png is shown 
+
+
+**Cart** 
+
+Items are removed from basket if the quantity is changed to 0.
+
+An empty cart  will show a message and a button to redirect the user.
+
+**Checkout**
+
+A registered user can use the save-information checkbox to use their  default delivery information  to pre-fill the form on the checkout page.
+
+if a user quits the checkout process before it has finished loading their information or if there is a delay so that the checkout process is interrupted, the webhook handler from Stripe will ensure that the payment intent succeeds, checkout will be successful and their delivery information will be saved. 
+To prevent a user's order being duplicated Eg during a delayed order process the webhook handler will make 5 attempts before creating the order.
+ To ensure the same order by a user is fulfilled, each order contains the stripe intent id wihich is unique.
+Country selection is by dropdown to avoid user confusion 
+
+Validation messages give specific messages if the input data fields are not filled correctly 
+
+Stripe error messages inform the user specifically when there is an error with the information entered to do with their credit card Eg card declined, card invalid, card number not correct, invalid CVC, invalid expiry year
+
+A spinning overlay appears during CC processing to inform the user that the process is completing 
+
+Stripe verification asks the user to verify payment before the process completes .
+
+The  user is shown the checkout success page and a thank you message with their order information and a message to say they will receive an email confirmation of their purchase  as soon as the payment and order is successfully placed.
+
+**Profile** 
+Registered users that check the save to profile box on the checkout page  save their default delivery and order history to their profile page
+
+ **Blog**
+
+**Blog detail pag**e displays an individual blog with large image. All users can read the blog but only registered users can access the a commenting section below a post to post a comment. 
+User comments must be moderated by admin before being added
+After adding a comment the user is notified that their comment is awaiting moderation  
+
+**Add Blog page**  is only available to superusers and is a form with input fields each of which must be filled in and an image field to upload an image to the blog post 
+
+
+
+
 
 ## Features of the website 
 
@@ -167,7 +316,9 @@ Using Stripe payment system with inbuilt and effective security and automation
 **<u>Nav Bar</u>**
 
 Navbar is displayed on all pages  
-Account dropdown link -- allows all users to login, register, access login pages and sign out 
+My Account icon with  user  links to  login, register pages 
+registered users to log out and My Profile pages 
+superusers to Product Management page  
 Cart icon ( color change on adding item and monetary total) -- users can see item has been added and total cost 
 Product menu links with dropdown, allows user to sort items by category, price and rating  
 Blog link allows user to see all blog articles 
@@ -177,30 +328,114 @@ Banner  displays a message - encourages users to shop to earn free shipping
 
 Website contact information, email & phone number 
 Social platform links 
-Link back to home page 
+Link back to home, about, contact and privacy pages 
 Link to Blog 
 Link to Shop 
 
 ##### **Home Page**
 
+  Hero image with 2 large buttons Shop Now and Read our Blog 
+
+ **All Products page** 
+ Products displayed total 
+ Image of individual product item  and description, category, price, rating  
+ Each image links to product detail page 
+ Title links to product detail page and displays change of state on hover
+**Admin users** have text links that allow edit or deletion of item and alert messages show for each action. 
+
+**Product Detail Page** 
+ Large image of product
+ Size selector 
+ Quantity selector 
+ Button to return to All Products page ( Keep Shopping) 
+ Button to add item to cart  (Add to Cart) 
+ if the add to Cart button is used  User  Success Message is displayed
+ **Admin users** have text links for edit or deletion of item and alert messages show for each action
+
+**Cart** 
+ Cart icon has color change when item is added to it 
+ When clicked it displays the cart page with list of items selected for purchase 
+ Each item has image, price, quantity 
+ Text links below item are Remove and Update Remove item will remove the item from cart and update the grand total
+Remove and Update actions trigger user messages 
+
+**Secure Checkout page** 
+
+Form for customer information requiring full name, email and physical address 
+Summary of the customer order 
+Card detail section
+
+**Checkout Success page** 
+
+Displays purchase summary including order number 
+Message is displayed informing of email confirmation will be emailed to purchaser 
+Button for "Keep Shopping"
+
+**Blog Page** (all users)
+Displays the navbar and footer with a list of blog posts and thumbnail image for each  Read More button links to complete post and large image
+
+**Post Details Page**(all users ) 
+Full blog article is displayed 
+Button for  return to blog page
+Sidebar to contain advertising for local pet services with a link to a website 
 
 
 
+**Commenting section** on Post Detail page below each post ( registered users only ) 
+
+
+
+**My Account icon and dropdown** 
+
+**Signup /Register Page** (all users)
+
+Text link to Login page 
+Form with input fields for email username and password 
+Buttons to submit registration or to go to Login page 
+
+**Login Page** ( all users)
+
+Text links to Register/sign up page  and to Password Reset page 
+Buttons to Home page and to submit Login 
+Checkbox for user to tick "Remember me" 
+Input fields for Email/ Username  and Password 
+
+**Logout** ( logged in users only)
+Buttons to Cancel or Logout to give user option to stay logged in or complete the action
+Message is given to user " You  have logged out"
+
+**My Profile** (  logged in users only )
+Stores the profile page that contains Order History and default delivery information so that the user has a record of purchases and can edit their deliver information that will prefill a checkout form for future purchases. 
+
+**Product Management** (   logged in super/admin users only)
+ Links to the  Add Product form  - a new product can be added with all fields name, sku, description, image etc
+Admin/super users can edit or delete a store item using text links on product page or product-detail page.
+
+**Post Management** (   logged in super/admin users only)
+Add Post form with input fields and image upload 
+Each field has validation
+Success message displays to the user when the post is saved to draft or published 
+Error message displays if a field is left blank or filled incorrectly Eg slug
 
 
 
 ### Features Left to Implement
 
  Long term goals of the site are
-To increase  user registration by 
+To increase  user registration and increase revenue by 
 
-providing a photo profile for  registered  users where they can upload a picture of their pet 
-having  live Zoom sessions  where local experts in various pet fields answer user questions. Pet service owners  can market their services and  increase traffic to the website in general and only registered users will receive email notification and be able to submit questions. 
-To increase revenue  by 
-To sell  advertising sections to local pet services - vets, groomers, dog walkers, dog daycare, dog trainers etc  to create revenue
+Providing an image profile for  registered  users where they can upload a picture of their pet
+Allow users to post reviews for products purchased 
+Introducing Zoom sessions  where local experts in various pet fields answer user questions,
+which can be recorded and uploaded to the website  
+Marketing new products and popular items to registered users using email marketing 
+Selling  advertising sections to local pet services - vets, groomers, dog walkers, dog daycare, dog trainers etc  to create revenue
+Upload videos to the blog  by local pet experts in various fields on pet nutrition, care of pets , dog training, puppy and kitten care etc 
+Introduce  a pet forum where registered users can ask questions and interact on the site  ( like mumsnet )  
 
-To upload videos to the blog  by local pet experts in various fields on pet nutrition, care of pets , dog training, puppy and kitten care etc 
-A pet forum where users can ask questions and interact on the site  ( like mumsnet )  
+
+
+.
 
 ## Technologies Used
 
@@ -249,27 +484,9 @@ A pet forum where users can ask questions and interact on the site  ( like mumsn
 
   
 
-## Testing
+## Deployment 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-## Deployment
-
-### Steps to Heroku Deployment :
+#### Steps to Heroku Deployment :
 
  **Setting up the Heroku App** 
 
@@ -394,11 +611,44 @@ This will open a port (which may be different depending on your IDE) .
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+
+[Table of contents](http://ecotrust-canada.github.io/markdown-toc)  
+
+Content  for blog posts was taken from the [PDSA website](https://pdsa.org.uk ) 
+Descriptions for pet products was taken from [Pet Planet website](https://petplanet.co.uk)
+
+
 
 ### Media
-- The photos used in this site were obtained from ...
+Images in the blog posts are from  
+Puppies from  [ pexels.com]( https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)
+Suitcase image from [espares blog](https://blog.espares.co.uk/)
 
-### Acknowledgements
+Cat images from [aspca.org](https://www.aspca.org/) and from  [pets.webmd.com](https://pets.webmd.com/cats/default.htm)
 
-- I received inspiration for this project from X
+Main hero image on home page [Anna Dudkova on Unsplash](https://unsplash.com/photos/urs_y9NwFcc)
+
+Pet product images from [Pet Planet website.](https://petplanet.co.uk.)
+
+#### **Code** 
+
+Blog post gallery on home page adapted  from 
+[mdbootstrap.com](https://mdbootstrap.com/)
+[bootstrap](https://getbootstrap.com/)
+
+Blog application code was derived from the following sources 
+[django central.com](https://djangocentral.com/building-a-blog-application-with-django)
+
+the ebook by [Will Vincent](https://wsvincent.com/best-django-books/#django-for-beginners) 
+
+[Pythonistaplanet.com](https://www.pythonistaplanet.com/how-to-create-blog-using-django/)
+
+[Djangocentral.com]( https://djangocentral.com/building-a-blog-application-with-django/)
+
+The commenting section in the blog was adapted from 
+
+[djangocentral.com](https://djangocentral.com/creating-comments-system-with-django/)
+
+Help with uploading images from
+[Geeksforgeeks.com]((https://www.geeksforgeeks.org/python-uploading-images-in-django/)) 
+
