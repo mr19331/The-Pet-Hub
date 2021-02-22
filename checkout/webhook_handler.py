@@ -19,7 +19,7 @@ class StripeWH_Handler:
 
     def _send_confirmation_email(self, order):
         """ Send an order confirmation to the user"""
-        cust_email = order.emai
+        cust_email = order.email
         subject = render_to_string(
             'checkout/confirmation_emails/confirmation_email_subject.txt',
             {'order': order})
@@ -84,7 +84,7 @@ class StripeWH_Handler:
                         email__iexact=billing_details.email,
                         phone_number__iexact=shipping_details.phone,
                         country__iexact=shipping_details.address.country,
-                        postcode__iexact=shipping_details.address.postcode,
+                        postcode__iexact=shipping_details.address.postal_code,
                         town_or_city__iexact=shipping_details.address.city,
                         street_address1__iexact=shipping_details.address.line1,
                         street_address2__iexact=shipping_details.address.line2,
@@ -149,11 +149,10 @@ class StripeWH_Handler:
             content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
             status=200)
 
-
-def handle_payment_intent_payment_failed(self, event):
-    """
-    Handle Stripe payment_intent_failed webhook
-    """
-    return HttpResponse(
-        content=f'Webhook received: {event["type"]}',
-        status=200)
+    def handle_payment_intent_payment_failed(self, event):
+        """
+        Handle Stripe payment_intent_failed webhook
+        """
+        return HttpResponse(
+            content=f'Webhook received: {event["type"]}',
+            status=200)
