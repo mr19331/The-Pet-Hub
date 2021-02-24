@@ -124,20 +124,21 @@ WSGI_APPLICATION = 'pet_hub.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/3.1/ref/settings/#databas
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://aupepuxepceydq:6822d1862f4559421c16a0a48e1f2fe3e5087f586480b473b61aeeb1dad449db@ec2-34-254-69-72.eu-west-1.compute.amazonaws.com:5432/dc5p8386i35ej9')
-
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
+
+
+# DATABASES = {
+#     'default': dj_database_url.parse('')
+
+# }
 
 
 # Password validation

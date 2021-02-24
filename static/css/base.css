@@ -20,6 +20,7 @@ body {
 }
 
 .logo-font {
+    font-family: Fredoka;
     text-transform: uppercase;
 }
 
@@ -235,6 +236,12 @@ input[name='q']::placeholder {
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
 }
+
+/* Styling for blog sidebar */
+
+.card{
+        box-shadow: 0 16px 48px #E3E7EB;
+    }
 
 /* Product Form Styling */
 
