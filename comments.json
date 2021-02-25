@@ -1,0 +1,1 @@
+[{"model": "blog.comment", "pk": 1, "fields": {"post": 5, "author": 2, "body": "This is a very interesting topic  I would like to know more thanks", "created_on": "2021-02-22T12:14:29.544Z", "active": false}}]
