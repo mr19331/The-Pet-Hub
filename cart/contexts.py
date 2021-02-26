@@ -1,7 +1,7 @@
 from decimal import Decimal
+from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
-from django.conf import settings
 
 
 def cart_contents(request):
@@ -29,7 +29,7 @@ def cart_contents(request):
                 cart_items.append({
                     'item_id': item_id,
                     'quantity': quantity,
-                    'product': product, 
+                    'product': product,
                     'size': size,
                 })
 

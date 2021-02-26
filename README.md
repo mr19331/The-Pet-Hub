@@ -179,6 +179,7 @@ Fonts are those easy to read.
  .
 
 1. **Wireframes**
+[Wireframes for the  Pet Hub](https://github.com/mr19331/the-pet-hub/blob/master/WIREFRAMES.md)
 
    
 
@@ -234,7 +235,8 @@ Fonts are those easy to read.
 - I want to be able to login and logout and to be able to easily and quickly add, edit or delete the products for sale and I want to be able to add posts to the blog.
 - I want the site to be stable and robust and function without problems 
 
-
+## Testing 
+[Testing for the  Pet Hub](https://github.com/mr19331/the-pet-hub/blob/master/TESTING.md)
 
 ## Defensive Design 
 
@@ -476,11 +478,11 @@ Introduce  a pet forum where registered users can ask questions and interact on 
 
 - [Cacoo](https://cacoo.com/) was used to create the wireframes for this project.
 
-- [Django ImageKit](https://github.com/samathaluca/new-lazycamp/blob/master)
 
-- [Django Allauth](https://github.com/samathaluca/new-lazycamp/blob/master)
 
-- [Facebook Messenger](https://github.com/samathaluca/new-lazycamp/blob/master)
+
+
+
 
   
 
