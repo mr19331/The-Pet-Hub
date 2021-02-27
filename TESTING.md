@@ -1,5 +1,14 @@
 # Testing 
 
+## Testing Tools 
+ CSS validator used for CSS -[CSS](https://jigsaw.w3.org/css-validator/)
+ HTML validator used for checking HTML code -[HTML](https://validator.w3.org/)
+ JSHint validator for checking JS -[JS](https://jshint.com/ )
+ warnings given but no errors in the Javascript code 
+ 
+
+
+
 ##### Home Page 
 
 ##### **Shopper/blog reader**
