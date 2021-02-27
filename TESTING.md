@@ -5,7 +5,11 @@
 ##### **Shopper/blog reader**
 
 **Links** 
-All Products  dropdown links to sort products by Category, Price, Ratings and to All Products page   tested and all working 
+All Products  dropdown links to sort products by Category, Price, Ratings and to All Products page   tested and working
+Cats and Dogs dropdown links working correctly 
+All Specials is not working correctly  -- the category New Arrivals is working and displays correctly and displays in All Specials but 
+the products in the Best Sellers category are not displaying on the category page or in the All Specials page 
+ 
 **Icons** 
 My Account icon has  dropdown links  to Register or  Login pages   tested and working
 success message displayed when user registers or logs in.  
@@ -19,8 +23,8 @@ button to Blog links to All blog post page working
 **Search Bar** functions correctly to display products by a keyword in either title or description 
 The Home page is available on Desktop, tablet and mobile versions 
 **Footer** 
-Links to the Home page and to Contact, About and Privacy pages . all working 
-Links to social media , all working 
+Links to the Home page is working  Contact, About and Privacy pages not installed yet.
+Links to social media , connected and  working 
 
    **Home Page  for registered user** 
          My Account dropdown links now include My Profile and logout   
@@ -30,11 +34,13 @@ Links to social media , all working
 
 ##### Product Page for all users
 
-Number of items is displayed 
+Number of items is displayed and is correct.
 
-Sort By selection box allows user to sort items by category, price or rating, tested &  working 
+Sort By selection box allows user to sort items by category, price or rating, tested &  not working correctly 
+this was discovered at the last minute and too late to fix. 
 
 Product title links to product detail page for the item, tested and  is working 
+ 
 
 ##### **Product Detail Page for all Users** 
 
@@ -89,6 +95,9 @@ Displays a commenting section for user comments ( moderated by admin)
 **Forms**
 Each text input field has character restrictions and displays error messages to the user
 **Register form** will return an error if the password is too similar to the username or if there are too few characters in the password 
+when the user signs up successfully a success message is displayed to say that the user will receive an email to verify their address. 
+On clicking verify the user receives a second message to say they can now log in 
+The email functionality has been tested and works. 
 **Text link** to login page  tested and works 
 **Buttons**  linking to Login or to complete the Registration process links to the Login page  tested and works 
 **Password Reset Page** 
@@ -104,7 +113,7 @@ Success message is displayed to the user when any of these actions is completed 
 
 ##### Profile Page- registered users
 
-If there is an order history for the user  details will be displayed  order number, date of order, order item , order title, cost of each item, delivery cost ( if any ) and grand total
+If there is an order history for the user,  details will be displayed  order number, date of order, order item , order title, cost of each item, delivery cost ( if any ) and grand total
 **Delivery information** for the user is displayed in input fields  phone number, street address city, postcode, county and country selector box 
 **Button** to update the information if the user makes changes  
 

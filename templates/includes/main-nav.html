@@ -39,7 +39,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="cats-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Cats
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+            <div class="dropdown-menu border-0" aria-labelledby="cats-link">
                 <a href="{% url 'products' %}?category=cat_collars" class="dropdown-item">Collars</a>
                 <a href="{% url 'products' %}?category=cat_toys" class="dropdown-item">Toys</a>
                 <a href="{% url 'products' %}?category=cat_feeding" class="dropdown-item">Feeding  &amp; Fountains</a>
@@ -54,7 +54,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
                 <a href="{% url 'products' %}?category=best_sellers" class="dropdown-item">Best Sellers</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals,best_sellers" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
