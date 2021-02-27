@@ -60,7 +60,8 @@ def add_post(request):
             messages.success(request, 'Success! Your post was added')
             return redirect(reverse('post_detail', args=[post.slug]))
         else:
-            messages.error(request, 'Post not added. Please check that your submission is valid')
+            messages.error(
+                request, 'Post not added. Please check your submission is valid')
     else:
         form = PostForm()
 

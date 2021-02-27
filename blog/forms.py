@@ -7,7 +7,7 @@ from .widgets import CustomClearableFileInput
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        fields = ('body',) 
+        fields = ('body',)
 
 
 class PostForm(forms.ModelForm):
@@ -16,7 +16,8 @@ class PostForm(forms.ModelForm):
         model = Post
         fields = '__all__'
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(
+        label='Image', required=False, widget=CustomClearableFileInput)
 
     # def __init__(self, *args, **kwargs):
     #     super().__init__(*args, **kwargs)

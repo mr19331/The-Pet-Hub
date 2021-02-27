@@ -46,7 +46,8 @@ def all_products(request):
                 messages.error(request, "Sorry! No search criteria entered")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -86,7 +87,8 @@ def add_product(request):
             messages.success(request, 'Success! Your product was added')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Product not added. Please check that your submission is valid')
+            messages.error(
+                request, 'Product not added. Please check that your submission is valid')
     else:
         form = ProductForm()
 
@@ -112,7 +114,8 @@ def edit_product(request, product_id):
             messages.success(request, 'Success! You have updated the product')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Sorry! Your product did not update.Please check that your form is valid')
+            messages.error(
+                request, 'Sorry! Your product did not update.Please check that your form is valid')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')

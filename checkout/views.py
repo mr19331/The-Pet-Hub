@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -117,7 +119,7 @@ def checkout(request):
                 'street_address1': profile.default_street_address1,
                 'street_address2': profile.default_street_address2,
                 'county': profile.default_county,
-                })
+            })
         except UserProfile.DoesNotExist:
             order_form = OrderForm()
     else:
