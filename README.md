@@ -53,7 +53,10 @@ Shoppers may buy items from the website without creating an account but visitors
 
 
 
-  
+ **The Pet Hub ** 
+
+![Home Page device mockup](https://res.cloudinary.com/mr19331/image/upload/v1614502967/Pet-Hub/device-mockup_vovvt2.png)
+ 
 
 ## UX
 
@@ -303,7 +306,10 @@ Registered users that check the save to profile box on the checkout page  save t
 User comments must be moderated by admin before being added
 After adding a comment the user is notified that their comment is awaiting moderation  
 
-**Add Blog page**  is only available to superusers and is a form with input fields each of which must be filled in and an image field to upload an image to the blog post 
+**Add Blog page**  is only available to superusers and is a form with input fields each of which must be filled in and an image field to upload an image to the blog post
+the admin user can choose to save the post to draft or publish immediately  and receives a success message when each action is completed and submitted
+For now the adminuser has to go to Django admin and log in to edit a post or to delete 
+Forms for editing and a delete option have yet to be added to the functionality  
 
 
 
@@ -418,6 +424,7 @@ Add Post form with input fields and image upload
 Each field has validation
 Success message displays to the user when the post is saved to draft or published 
 Error message displays if a field is left blank or filled incorrectly Eg slug
+Posts can be saved to draft or published immediately 
 
 
 
@@ -434,7 +441,9 @@ Marketing new products and popular items to registered users using email marketi
 Selling  advertising sections to local pet services - vets, groomers, dog walkers, dog daycare, dog trainers etc  to create revenue
 Upload videos to the blog  by local pet experts in various fields on pet nutrition, care of pets , dog training, puppy and kitten care etc 
 Introduce  a pet forum where registered users can ask questions and interact on the site  ( like mumsnet )  
-
+Form to update/edit a post 
+Delete option for removing a post 
+A better text editor should be added to the Add Post form 
 
 
 .
